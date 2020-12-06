@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>datav libs example</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.0.4/dist/vue.global.js"></script>
   <script src="../dist/datav.libs.js" ></script>
 </head>
 <body>
-  
+  <div id="app">
+      {{message}}
+      <test-component></test-component>
+  </div>
+
+  <script>
+    Vue.createApp({
+      setup(){
+        var message='hello world';
+        return {message}
+      }
+    }).use(rollupDatav).mount("#app")
+  </script>
 </body>
 </html>

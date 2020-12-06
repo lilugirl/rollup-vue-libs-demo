@@ -20,14 +20,14 @@ module.exports= {
       format:'umd',
       name: 'rollupDatav',
       globals: {
-        vue:'vue'
+        vue:'Vue'
       }
     },
     {
       file:outputEsPath,
       format: 'es',
        globals: {
-        vue:'vue'
+        vue:'Vue'
       }
     }
   ],

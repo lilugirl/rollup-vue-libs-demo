@@ -13,10 +13,7 @@ var script = {
 const _withId = /*#__PURE__*/withScopeId("data-v-07bdddea");
 
 pushScopeId("data-v-07bdddea");
-const _hoisted_1 = {
-  class: "test",
-  id: "test"
-};
+const _hoisted_1 = { class: "test" };
 popScopeId();
 
 const render = /*#__PURE__*/_withId((_ctx, _cache, $props, $setup, $data, $options) => {

@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('vue')) :
   typeof define === 'function' && define.amd ? define(['vue'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.rollupDatav = factory(global.vue));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.rollupDatav = factory(global.Vue));
 }(this, (function (vue) { 'use strict';
 
   var script = {
@@ -17,10 +17,7 @@
   const _withId = /*#__PURE__*/vue.withScopeId("data-v-07bdddea");
 
   vue.pushScopeId("data-v-07bdddea");
-  const _hoisted_1 = {
-    class: "test",
-    id: "test"
-  };
+  const _hoisted_1 = { class: "test" };
   vue.popScopeId();
 
   const render = /*#__PURE__*/_withId((_ctx, _cache, $props, $setup, $data, $options) => {

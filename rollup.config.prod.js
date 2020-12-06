@@ -20,11 +20,17 @@ module.exports= {
     {
       file:outputUmdPath,
       format:'umd',
-      name:'rollupDatav'
+      name:'rollupDatav',
+      globals: {
+        vue:'Vue'
+      }
     },
     {
       file:outputEsPath,
-      format:'es'
+      format:'es',
+      globals: {
+        vue:'Vue'
+      }
     }
   ],
   plugins:[
